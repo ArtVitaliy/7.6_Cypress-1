@@ -1,0 +1,20 @@
+{
+  "name": "7.6-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress": "cypress open",
+    "cy:laptop:headless": "npx cypress run -b chrome -C cypress.config.js",
+    "cy:laptop:headed": "npx cypress run -b firefox --headed -C cypress.config.js",
+    "cy:mobile:headless": "npx cypress run -b edge -C cypress2.config.js",
+    "cy:mobile:headed": "npx cypress run -b chrome --headed -C cypress2.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.0.0",
+    "prettier": "3.0.3"
+  }
+}
