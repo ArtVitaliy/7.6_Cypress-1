@@ -45,7 +45,7 @@ describe("Favorite book spec", () => {
   });
 
   it("Should add book to favorite through 'Book list' page", () => {
-    cy.addBookNoFavorite(book1);
+    cy.addBook(book1);
     cy.contains(book1.title)
       .should("be.visible")
       .within(() => cy.get(".card-footer > .btn").click({ force: true }));
